@@ -26,7 +26,8 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader',
+     'django.template.loaders.app_directories.Loader')
 # Application definition
 
 INSTALLED_APPS = (
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'conver2014',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -80,3 +82,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

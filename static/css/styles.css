@@ -1,0 +1,23 @@
+body {
+    background: black;
+    color: white;
+    margin-top: 10em;
+    font-family: 'Bree Serif', serif;
+    font-size:0.9em;
+
+}
+.container {
+margin: 0 auto;
+max-width: 350px;
+}
+.big {
+font-size: 200%;
+margin-top: 1em;
+padding-left: 60px;
+}
+.quote {
+font-family: 'Convergence', sans-serif;
+text-align:right;
+margin-top: 2em;
+padding-right: 14px;
+font-size: 100%;}
